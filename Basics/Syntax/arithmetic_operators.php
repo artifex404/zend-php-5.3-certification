@@ -20,3 +20,11 @@ echo PHP_EOL; // Constant giving a new line character
 
 echo $b % $a; // Outputs 1
 
+echo PHP_EOL;
+
+echo 5 % -2; // Note, Outputs 1
+
+echo PHP_EOL;
+
+echo -5 % 2; // Note, Outputs -1
+
