@@ -85,4 +85,33 @@ echo PHP_EOL;
 
 echo gettype($array); // Outputs array
 
+echo PHP_EOL;
+
 // Check if a variable is with empty(). A variable is considered empty if: null, 0, false, 0.0, array(), "", "0". Also if variable is unset or declared without value.
+
+$some_variable = "0";
+settype($some_variable, "boolean"); // $some_variable will become an integer of 1
+var_dump($some_variable);
+
+/* Boolean casted to other types
+
+		true	false
+string 	"1"		""
+integer  1		0
+
+** Integer casted to other types
+
+			0		1		-1
+string		"0"		"1"		"-1"
+boolean		false	true	true
+
+** String casted to other types
+
+			""		"0"		"3 apples"		"pool 8"
+integer		0		 0		3				0
+boolean		false	false	true			true
+
+
+*/
+
+echo PHP_INT_MAX; // Constant for a maximum integer number on current system
