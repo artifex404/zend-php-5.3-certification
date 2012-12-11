@@ -9,6 +9,12 @@ define("Ω", "omega");
 
 $Ω = "some value"; // valid variable name, same reason
 
+function Ω() {
+	echo "strange function";
+}
+
 echo Ω; // outputs: omega
 echo PHP_EOL;
 echo $Ω; // outputs: some value
+echo PHP_EOL;
+Ω(); // outputs: strange function
