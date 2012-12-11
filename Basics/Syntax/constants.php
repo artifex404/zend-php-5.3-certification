@@ -18,3 +18,20 @@ echo PHP_EOL;
 echo $Ω; // outputs: some value
 echo PHP_EOL;
 Ω(); // outputs: strange function
+
+
+// Magic constants
+
+/*
+
+Their value change depending where used
+
+__LINE__
+__FUNCTION__
+__CLASS__
+__METHOD__
+__FILE__
+__DIR__
+__NAMESPACE__
+
+*/
